@@ -27,4 +27,20 @@ public class BusTest{
     assertEquals(0, bus.peopleCount());
   }
 
+  @Test
+  public void testAddPerson(){
+    bus.add(homer);
+
+    assertEquals(1, bus.peopleCount());
+  }
+
+  @Test
+  public void testPersonLeaves(){
+    bus.add(homer);
+
+    assertEquals(1, bus.peopleCount());
+    bus.personLeaves();
+
+    assertEquals(0, bus.peopleCount());
+  }
 }
