@@ -22,4 +22,9 @@ public class BusTest{
     assertEquals("The MonoRail", bus.getName());
   }
 
+  @Test
+  public void CheckBusEmpty(){
+    assertEquals(0, bus.peopleCount());
+  }
+
 }
